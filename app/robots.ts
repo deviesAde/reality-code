@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
             userAgent: "*",
             allow: "/",
         },
-        sitemap: "https://realitycode.web.id/sitemap.xml",
+        sitemap: "https://www.realitycode.web.id/sitemap.xml",
     };
 }

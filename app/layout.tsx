@@ -4,7 +4,7 @@ import CustomCursor from "@/components/CustomCursor";
 import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://realitycode.web.id"),
+  metadataBase: new URL("https://www.realitycode.web.id"),
   title: {
     default: "Reality Code – Digital Without Limits",
     template: "%s | Reality Code",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     title: "Reality Code – Digital Without Limits",
     description:
       "Jasa pembuatan website & solusi coding cepat, tepat, tanpa ribet. Website bisnis, UMKM, mahasiswa, personal brand.",
-    url: "https://realitycode.web.id",
+    url: "https://www.realitycode.web.id",
     siteName: "Reality Code",
     locale: "id_ID",
     type: "website",
@@ -62,9 +62,9 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   "name": "Reality Code",
-  "image": "https://realitycode.web.id/logo.png",
-  "@id": "https://realitycode.web.id",
-  "url": "https://realitycode.web.id",
+  "image": "https://www.realitycode.web.id/logo.png",
+  "@id": "https://www.realitycode.web.id",
+  "url": "https://www.realitycode.web.id",
   "telephone": "+6282132394872",
   "address": {
     "@type": "PostalAddress",
@@ -94,7 +94,7 @@ const jsonLd = {
     "closes": "23:59"
   },
   "sameAs": [
-    "https://instagram.com/realitycodee"
+    "https://www.instagram.com/realitycodee"
   ]
 };
 
