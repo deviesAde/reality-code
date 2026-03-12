@@ -6,8 +6,8 @@ import { MessageSquare, Instagram, Mail, MapPin, Heart } from "lucide-react";
 const contacts = [
     {
         label: "WhatsApp",
-        value: "+62 821-3239-4872",
-        href: "https://wa.me/6282132394872",
+        value: "+62 823-3265-3341",
+        href: "https://wa.me/6282332653341",
         icon: MessageSquare,
     },
     {
@@ -84,7 +84,7 @@ export default function ContactSection({ sectionRef }: ContactSectionProps) {
                     initial={{ opacity: 0, y: 20 }}
                     animate={inView ? { opacity: 1, y: 0 } : {}}
                     transition={{ delay: 0.5 }}
-                    className="text-white/50 text-lg md:text-xl mt-8 leading-relaxed max-w-[55ch]"
+                    className="text-white/50 text-lg md:text-xl mt-8 leading-relaxed max-w-[55ch] prose"
                 >
                     Siap membahas project-mu. Hubungi kami sekarang dan mulai diskusi gratis untuk mengubah konsep Anda menjadi kenyataan digital.
                 </motion.p>
@@ -104,7 +104,7 @@ export default function ContactSection({ sectionRef }: ContactSectionProps) {
                     >
                         <c.icon className="w-8 h-8 text-[#E10600] group-hover:scale-110 transition-transform duration-300" />
                         <div className="flex-1">
-                            <div className="text-[10px] text-white/30 uppercase tracking-[0.2em] mb-2">
+                            <div className="text-[10px] text-white/30 uppercase tracking-[0.2em] mb-2 font-mono">
                                 {c.label}
                             </div>
                             <div className="text-base md:text-lg font-bold text-white group-hover:text-[#E10600] transition-colors">

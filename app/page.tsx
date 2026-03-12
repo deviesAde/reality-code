@@ -34,16 +34,19 @@ export default function Home() {
       <section
         id="about"
         ref={aboutRef}
-        className="relative overflow-hidden pt-48 pb-56 lg:pt-80 lg:pb-96 bg-black flex justify-center w-full"
+        className="relative overflow-hidden pt-48 pb-64 lg:pt-80 lg:pb-96 bg-black flex flex-col items-center w-full"
       >
         <div className="max-w-7xl mx-auto px-6 lg:px-8 w-full">
           <AboutSection sectionRef={aboutRef} />
         </div>
       </section>
+
+      <div className="h-32 lg:h-64 bg-black" />
+
       <section
         id="services"
         ref={servicesRef}
-        className="relative overflow-hidden py-64 lg:py-80 bg-[#0d0d0d] flex justify-center w-full"
+        className="relative overflow-hidden py-64 lg:py-96 bg-[#0d0d0d] flex flex-col items-center w-full"
       >
         <div className={container}>
           <ServicesSection sectionRef={servicesRef} />
@@ -52,7 +55,7 @@ export default function Home() {
       <section
         id="why"
         ref={whyRef}
-        className="relative overflow-hidden py-64 lg:py-80 bg-[#0d0d0d] flex justify-center w-full"
+        className="relative overflow-hidden py-64 lg:py-[24rem] bg-[#0d0d0d] flex flex-col items-center w-full"
       >
         <div className={container}>
           <WhyChooseUsSection sectionRef={whyRef} />
@@ -61,7 +64,7 @@ export default function Home() {
       <section
         id="cta"
         ref={ctaRef}
-        className="relative overflow-hidden py-64 lg:py-80 bg-[#E10600] flex justify-center w-full"
+        className="relative overflow-hidden py-64 lg:py-[24rem] bg-[#E10600] flex flex-col items-center w-full"
       >
         <div className={`${container} text-center`}>
           <CTASection sectionRef={ctaRef} />
@@ -70,7 +73,7 @@ export default function Home() {
       <section
         id="contact"
         ref={contactRef}
-        className="relative overflow-hidden py-64 lg:py-80 bg-[#0A0A0A] flex justify-center w-full"
+        className="relative overflow-hidden py-64 lg:py-[24rem] bg-[#0A0A0A] flex flex-col items-center w-full"
       >
         <div className={container}>
           <ContactSection sectionRef={contactRef} />

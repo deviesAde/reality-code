@@ -1,7 +1,21 @@
 import type { Metadata } from "next";
+import { Space_Grotesk, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
 import CustomCursor from "@/components/CustomCursor";
 import Navbar from "@/components/Navbar";
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-space-grotesk",
+  display: "swap",
+});
+
+const ibmPlexMono = IBM_Plex_Mono({
+  weight: ["400", "500", "600", "700"],
+  subsets: ["latin"],
+  variable: "--font-mono",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.realitycode.web.id"),
@@ -65,7 +79,7 @@ const jsonLd = {
   "image": "https://www.realitycode.web.id/logo.png",
   "@id": "https://www.realitycode.web.id",
   "url": "https://www.realitycode.web.id",
-  "telephone": "+6282132394872",
+  "telephone": "+6282332653341",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Indonesia",
@@ -104,7 +118,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="id" className="scroll-smooth" suppressHydrationWarning>
+    <html lang="id" className={`${spaceGrotesk.variable} ${ibmPlexMono.variable} scroll-smooth`} suppressHydrationWarning>
       <body className="bg-black text-white font-grotesk antialiased">
         <script
           type="application/ld+json"

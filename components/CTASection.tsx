@@ -40,7 +40,7 @@ export default function CTASection({ sectionRef }: CTASectionProps) {
                 <motion.p
                     initial={{ opacity: 0 }}
                     animate={inView ? { opacity: 1 } : {}}
-                    className="text-[10px] font-bold tracking-[0.3em] uppercase text-black/40 mb-8"
+                    className="text-[10px] font-bold tracking-[0.3em] uppercase text-black/40 mb-8 font-mono"
                 >
                     — 06 / Let&apos;s Work
                 </motion.p>
@@ -83,7 +83,7 @@ export default function CTASection({ sectionRef }: CTASectionProps) {
                     className="flex flex-col items-center gap-6"
                 >
                     <a
-                        href="https://wa.me/6282132394872"
+                        href="https://wa.me/6282332653341"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="group inline-flex items-center gap-3 bg-[#0A0A0A] text-white font-bold uppercase tracking-widest text-sm px-10 py-5 border-2 border-[#0A0A0A] hover:bg-transparent hover:text-[#0A0A0A] transition-all duration-150"

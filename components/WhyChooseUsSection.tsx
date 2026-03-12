@@ -41,7 +41,7 @@ export default function WhyChooseUsSection({ sectionRef }: WhyChooseUsSectionPro
                         initial={{ opacity: 0, y: -20 }}
                         animate={inView ? { opacity: 1, y: 0 } : {}}
                         transition={{ duration: 0.5 }}
-                        className="text-sm font-bold uppercase tracking-[0.3em] text-[#E10600] mb-6"
+                        className="text-sm font-bold uppercase tracking-[0.3em] text-[#E10600] mb-6 font-mono"
                     >
                         — 05 / Why Us
                     </motion.p>
@@ -72,7 +72,7 @@ export default function WhyChooseUsSection({ sectionRef }: WhyChooseUsSectionPro
                         initial={{ opacity: 0, y: 20 }}
                         animate={inView ? { opacity: 1, y: 0 } : {}}
                         transition={{ delay: 0.6, duration: 0.6 }}
-                        className="text-white/50 text-base max-w-lg mt-6 leading-relaxed"
+                        className="text-white/50 text-base max-w-lg mt-6 leading-relaxed prose"
                     >
                         Kenapa harus pilih kami? Karena kami fokus pada kepuasan dan hasil terbaik untuk setiap project.
                     </motion.p>

@@ -33,7 +33,7 @@ export default function HeroSection({ sectionRef }: HeroSectionProps) {
                     className="flex items-center gap-3 sm:gap-4 mb-6 sm:mb-8"
                 >
                     <div className="w-8 sm:w-12 h-[2px] bg-[#E10600]/70" />
-                    <span className="text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-white/50">
+                    <span className="text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-white/50 font-mono">
                         Est. 2025 — Digital Services
                     </span>
                     <div className="w-8 sm:w-12 h-[2px] bg-[#E10600]/70" />
@@ -101,7 +101,7 @@ export default function HeroSection({ sectionRef }: HeroSectionProps) {
                             transition={{ type: "spring", stiffness: 300 }}
                         >
                             <span className="text-xl sm:text-2xl md:text-3xl font-black text-[#E10600]">{s.num}</span>
-                            <span className="text-[8px] sm:text-[10px] text-white/40 uppercase tracking-[0.2em]">{s.label}</span>
+                            <span className="text-[8px] sm:text-[10px] text-white/40 uppercase tracking-[0.2em] font-mono">{s.label}</span>
                             {index < 2 && (
                                 <div className="hidden sm:block absolute -right-6 md:-right-8 w-px h-8 bg-white/10" />
                             )}
@@ -116,7 +116,7 @@ export default function HeroSection({ sectionRef }: HeroSectionProps) {
                 transition={{ delay: 1.4 }}
                 className="absolute bottom-6 sm:bottom-8 md:bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 z-10"
             >
-                <span className="text-[8px] sm:text-[10px] tracking-[0.3em] uppercase text-white/30">Scroll</span>
+                <span className="text-[8px] sm:text-[10px] tracking-[0.3em] uppercase text-white/30 font-mono">Scroll</span>
                 <motion.div
                     animate={{ y: [0, 8, 0] }}
                     transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}

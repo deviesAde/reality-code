@@ -18,7 +18,8 @@ const config: Config = {
         white: "#FFFFFF",
       },
       fontFamily: {
-        grotesk: ["Space Grotesk", "sans-serif"],
+        grotesk: ["var(--font-space-grotesk)", "sans-serif"],
+        mono: ["var(--font-mono)", "monospace"],
       },
       animation: {
         glitch: "glitch 2.5s infinite",

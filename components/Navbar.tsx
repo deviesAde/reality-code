@@ -41,7 +41,7 @@ export default function Navbar() {
                             <a
                                 key={l.label}
                                 href={l.href}
-                                className="text-sm font-medium tracking-widest uppercase text-white/60 hover:text-white transition-colors relative after:absolute after:bottom-[-2px] after:left-0 after:w-0 after:h-[1px] after:bg-[#E10600] after:transition-all hover:after:w-full"
+                                className="text-sm font-medium tracking-widest uppercase text-white/60 hover:text-white transition-colors relative after:absolute after:bottom-[-2px] after:left-0 after:w-0 after:h-[1px] after:bg-[#E10600] after:transition-all hover:after:w-full font-mono"
                             >
                                 {l.label}
                             </a>

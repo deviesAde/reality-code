@@ -38,13 +38,13 @@ export default function ServicesSection({ sectionRef }: ServicesSectionProps) {
             </div>
 
             <div className="relative z-10 w-full">
-                <div className="flex flex-col md:flex-row items-start md:items-end justify-between mb-24 gap-12">
+                <div className="flex flex-col md:flex-row items-start md:items-end justify-between mb-48 gap-12">
                     <div className="max-w-2xl">
                         <motion.p
                             initial={{ opacity: 0, x: -20 }}
                             animate={inView ? { opacity: 1, x: 0 } : {}}
                             transition={{ duration: 0.5 }}
-                            className="text-sm font-bold uppercase tracking-[0.4em] text-[#E10600] mb-8"
+                            className="text-sm font-bold uppercase tracking-[0.4em] text-[#E10600] mb-8 font-mono"
                         >
                             — 03 / Problems & Services
                         </motion.p>
@@ -66,7 +66,7 @@ export default function ServicesSection({ sectionRef }: ServicesSectionProps) {
                         initial={{ opacity: 0, y: 20 }}
                         animate={inView ? { opacity: 1, y: 0 } : {}}
                         transition={{ delay: 0.6, duration: 0.6 }}
-                        className="text-white/50 text-base md:text-xl max-w-[45ch] leading-relaxed md:text-right"
+                        className="text-white/50 text-base md:text-xl max-w-[45ch] leading-relaxed md:text-right prose"
                     >
                         Apapun masalah digital Anda, Reality Code hadir dengan layanan profesional
                         yang menjamin hasil maksimal dan pengerjaan tepat waktu.
@@ -86,7 +86,7 @@ export default function ServicesSection({ sectionRef }: ServicesSectionProps) {
                                 }}
                                 className={`flex items-baseline gap-6 ${i % 2 === 1 ? "md:justify-end" : ""}`}
                             >
-                                <span className={`text-[#E10600] text-3xl md:text-5xl font-black opacity-20 group-hover:opacity-100 transition-opacity duration-500 ${i % 2 === 1 ? "order-2" : ""}`}>
+                                <span className={`text-[#E10600] text-3xl md:text-5xl font-black opacity-20 group-hover:opacity-100 transition-opacity duration-500 font-mono ${i % 2 === 1 ? "order-2" : ""}`}>
                                     {String(i + 1).padStart(2, "0")}
                                 </span>
                                 <span className="font-black uppercase text-[clamp(1.25rem,4vw,3.5rem)] leading-none tracking-tighter text-white/90 group-hover:text-white transition-colors">
